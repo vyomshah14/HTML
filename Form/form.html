@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        Gender:
+        <input type="radio" id="male" name="gender" value="male" required>
+        <input type="female" id="female " name="gender" value="female" required>
+        Subject:
+        <input type="checkbox" id="HTML" name="subject" value="HTML">
+        <label for="math">Math</label>
+        <input type="checkbox" id="WEBSITE" name="subject" value="WEBSITE">
+        <label for="science">Science</label>
+        <input type="checkbox" id="history" name="subject" value="history">
+        <label for="history">History</label><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography Channel</title>
+
+<style>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navi {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li {
+    cursor: pointer;
+    position: relative;
+}
+
+.menu li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: url("https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay */
+.photo::after {
+    content: "View Photo";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.photo:hover::after {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .navi {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navi">
+    <div class="logo">Photography</div>
+    <ul class="menu">
+        <li>Home</li>
+        <li>Gallery</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Capture Moments 📸</h1>
+</section>
+
+<!-- Gallery -->
+<section class="gallery">
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/34714639/pexels-photo-34714639.jpeg">
+    </div>
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/3497587/pexels-photo-3497587.jpeg">
+    </div>
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg">
+    </div>
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg">
+    </div>
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg">
+    </div>
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg">
+    </div>
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg">
+    </div>
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2026 Photography Channel | Designed with ❤️
+</footer>
+
+</body>
+</html>

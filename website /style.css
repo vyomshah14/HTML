@@ -1,0 +1,246 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fbff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    /* Thoda narrow rakha hai replica match karne ke liye */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Navbar --- */
+header {
+    background-color: #3b4252;
+    /* Dark Navy Color */
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    background-color: #4a90e2;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.btn-quote {
+    background-color: #4a90e2;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    /* Purple-Blue Gradient */
+    padding: 80px 0 120px 0;
+    /* Extra bottom padding for floating cards */
+    color: white;
+}
+
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.btn-main {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Hero Graphic Placeholder */
+.mockup-ui {
+    width: 320px;
+    height: 180px;
+    background-color: #2d3436;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ui-dots {
+    padding: 10px;
+}
+
+.ui-dots span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #55efc4;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+/* --- Services (Floating Cards) --- */
+.services {
+    display: flex;
+    gap: 20px;
+    margin-top: -60px;
+    /* This makes cards float on hero */
+    margin-bottom: 60px;
+}
+
+.service-card {
+    background: white;
+    flex: 1;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+/* --- About Section --- */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Image Size Chota Karne Ke Liye */
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    /* Size restricted */
+    height: 220px;
+    /* Height restricted */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* --- Projects Section --- */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.project-item {
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    height: 150px;
+    /* Small thumbnails */
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #2d3436;
+    color: #bdc3c7;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials span {
+    margin-left: 15px;
+    cursor: pointer;
+}
